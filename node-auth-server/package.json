@@ -1,0 +1,28 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "This is simple user authentication server using passport and JWT",
+  "main": "server.js",
+  "scripts": {
+    "react-login-app": "npm install --prefix react-login-app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix react-login-app",
+    "dev": "concurrently \"npm run server\" \"npm run react-login-app\""
+  },
+  "author": "Ankit Namdeo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^11.1.0"
+  }
+}
